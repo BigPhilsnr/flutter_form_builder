@@ -4,7 +4,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: '>=3.0.0-218.1.beta <4.0.0'
   flutter: ">=3.7.0"
 
 dependencies:
@@ -13,10 +13,12 @@ dependencies:
     sdk: flutter
   flutter_form_builder:
     path: ../
-  form_builder_validators: ^8.4.0
+  form_builder_validators:
+    git:
+      url: https://github.com/BigPhilsnr/form_builder_validators.git
   flutter_localizations:
     sdk: flutter
-  intl: ^0.17.0
+  intl:
 
 dev_dependencies:
   flutter_lints: ^2.0.1
